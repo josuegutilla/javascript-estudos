@@ -31,8 +31,7 @@ function initAccordion() {
     termos[0].nextElementSibling.classList.add(ativoClasse);
 
     function ativarDescricao() {
-      const proxElemento = this.nextElementSibling; //selecionando o segundo elemento
-      proxElemento.classList.toggle(ativoClasse);
+      this.nextElementSibling.classList.toggle(ativoClasse); //selecionando o segundo elemento e add classe ativo
       this.classList.toggle(ativoClasse);
     };
 

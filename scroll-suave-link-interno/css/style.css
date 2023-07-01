@@ -19,28 +19,28 @@ body {
 .container {
   box-sizing: border-box;
   max-width: 900px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .grid-section {
-  width: 100%;
   box-sizing: border-box;
-  padding: 10px;
   display: grid;
   grid-template-columns: 90px 300px 1fr;
   gap: 20px;
+  padding: 10px;
+  width: 100%;
 }
 
 .titulo {
-  grid-column: 1 / -1;
   font-family: 'Playfair Display SC', Georgia;
   font-size: 6rem;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 1rem;
+  grid-column: 1 / -1;
 }
 
 /* links */
@@ -50,12 +50,12 @@ body {
 }
 
 .header {
-  padding: 20px 0px 20px 0;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 2rem;
+  padding: 20px 0px 20px 0;
 }
 
 .menu {
@@ -67,25 +67,25 @@ body {
 }
 
 .menu a {
+  color: #2a2a2a;
   display: block;
-  text-decoration: none;
   font-size: 1.1rem;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #2a2a2a;
   position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .menu a::after {
   content: "";
-  display: block;
-  width: 0px;
-  height: 2px;
   background-color: #2a2a2a;
+  display: block;
   position: absolute;
   transition: .3s;
+  height: 2px;
+  width: 0px;
 }
 
 .menu a:hover::after {
@@ -123,19 +123,19 @@ body {
 
 .animais-descricao h2 {
   font-family: 'IBM Plex Mono', monospace;
-  text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: .1em;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .animais-descricao h2::before {
   content: "";
+  background-color: #77ff00;
   display: inline-block;
+  margin-right: 10px;
   width: 40px;
   height: 10px;
-  margin-right: 10px;
-  background-color: #77ff00;
 }
 
 .animais-descricao p {
@@ -150,17 +150,17 @@ body {
 
 /* faq */
 .faq-bg {
+  align-content: center;
   background-color: #2a2a2a;
   color: #070707;
   min-height: 470px;
-  align-content: center;
 } 
 
 .faq {
+  align-items: center;
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
-  box-sizing: border-box;
-  align-items: center;
 }
 
 .faq .titulo {
@@ -168,9 +168,9 @@ body {
 }
 
 .faq img {
-  grid-column: 3;
   align-self: center;
   justify-self: end;
+  grid-column: 3;
 }
 
 .faq-lista {
@@ -178,37 +178,38 @@ body {
 }
 
 .faq-lista dt {
+  color: #f7f7f7;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1.2px;
-  color: #f7f7f7;
   margin-top: 2rem;
   margin-bottom: .5rem;
 }
 
 .faq-lista dt::before {
   content: "";
+  background-color: #77ff00;
   display: inline-block;
+  margin-right: 10px;
   width: 20px;
   height: 10px;
-  margin-right: 10px;
-  background-color: #77ff00;
 }
 
 .faq-lista dd {
-  margin-left: 30px;
-  font-family: Helvetica, sans-serif;
-  margin-bottom: 3px;
   color: #a1a1a1;
+  font-family: Helvetica, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 3px;
 }
 
 /* contato */
 .contato {
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
-  box-sizing: border-box;
 }
+
 .contato-bg {
   padding-bottom: 40px;
 }
@@ -218,9 +219,9 @@ body {
 }
 
 .contato img {
-  grid-column: 3;
   align-self: center;
   justify-self: end;
+  grid-column: 3;
 }
 
 .mapa {
@@ -241,8 +242,8 @@ body {
   content: "";
   display: inline-block;
   background-color: #77ff00;
-  width: 20px;
   height: 10px;
+  width: 20px;
   margin-right: 10px;
 }
 
@@ -253,11 +254,11 @@ body {
 
 .footer {
   display: grid;
+  justify-content: space-between;
+  justify-items: center;
+  padding-top: 40px;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 30px;
-  justify-content: space-between;
-  padding-top: 40px;
-  justify-items: center;
 }
 
 .footer-contato h3 {
@@ -289,12 +290,12 @@ body {
 }
 
 .footer p {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  grid-column: 1 / -1;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
   font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  grid-column: 1 / -1;
 }
 
 @media(max-width: 700px) {
@@ -360,8 +361,8 @@ body {
 }
 
 .js-tabdescricao section.ativo {
-  display: block !important;
   animation: show .49s forwards;
+  display: block !important;
 }
 
 @keyframes show {
@@ -381,8 +382,8 @@ body {
 }
 
 .js-accordion dd.ativo {
-  display: block;
   animation: sildeDown 0.5s forwards;
+  display: block;
 }
 
 @keyframes sildeDown {
@@ -397,21 +398,21 @@ body {
 }
 
 .js-accordion dt {
-  cursor: pointer;
   align-items: center;
+  cursor: pointer;
 }
 
 .js-accordion dt::after {
   content: '';
+  align-self: center;
   background-image: url('../img/seta-abrir.svg');
-  width: 16px;
-  height: 6px;
   display: inline-block;
   background-repeat: no-repeat;
+  width: 16px;
+  height: 6px;
   margin-left: 8px;
   transition: 0.3s;
   transform: rotate(180deg);
-  align-self: center;
 }
 
 .js-accordion dt.ativo::after {
